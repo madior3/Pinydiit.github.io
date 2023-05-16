@@ -121,6 +121,7 @@ h1, h2, h3, h4, h5, h6 {
   background: transparent;
   color: #1977cc;
 }
+
 /**donate Button**/
 .donate-btn {
   margin-left: 45px;
@@ -140,13 +141,25 @@ h1, h2, h3, h4, h5, h6 {
   background: transparent;
   color: #8dc2f1;
 }
-
+/* Responsive Styles */
 @media (max-width: 768px) {
-  .getinvoled-btn {
-    margin: 0 15px 0 0;
-    padding: 6px 18px;
+  .getinvolved-btn,
+  .donate-btn {
+    font-size: 12px;
+    padding: 6px 15px;
+    margin-left: 20px;
   }
 }
+
+@media (max-width: 480px) {
+  .getinvolved-btn,
+  .donate-btn {
+    font-size: 10px;
+    padding: 4px 10px;
+    margin-left: 10px;
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -344,14 +357,32 @@ section {
   
 }
 .left{
-  width: 50%;
-  height: 600px;
+  width: 65%;
+  height: 421px;
   background: url("../img/background1.jpg") center center no-repeat;
-
+  transition: background-image 1s ease-in-out;
+  
 }
+
+.slider-image-1 {
+  background-image: url("../img/background1.jpg");
+}
+.slider-image-2 {
+  background-image: url("../img/bg2.jpg");
+}
+.slider-image-3 {
+  background-image: url("../img/bg3.jpg");
+}
+.slider-image-4 {
+  background-image: url("../img/bg4.jpg");
+}
+.slider-image-5 {
+  background-image: url("../img/bg5.jpg");
+}
+
 .right{
   width: 50%;
-  min-height: 400px;
+  min-height: 321px;
   background-color: black;
   display: flex;
   align-content: center;
@@ -960,6 +991,7 @@ appearance: none;
 
 #footer .footer-top .footer-info p {
   font-size: 14px;
+  color: #555555;
   line-height: 24px;
   margin-bottom: 0;
   font-family: "Roboto", sans-serif;
@@ -1029,7 +1061,7 @@ appearance: none;
 #footer .footer-top .footer-links ul a:hover {
   color: #fcec6d;
 }
-#footer .footer-top .footer-newsletter p , span{
+#footer .footer-top .footer-newsletter p {
   color: #555555;
 
 }
@@ -1068,16 +1100,21 @@ appearance: none;
 }
 
 #footer .copyright {
+  color: #555555;
   text-align: center;
   padding-top: 30px;
 }
 
 #footer .credits {
+  color: #7b7b7b;
   padding-top: 10px;
   text-align: center;
   font-size: 13px;
 }
+#footer .credits a{
+  color: #7b7b7b;
 
+}
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/

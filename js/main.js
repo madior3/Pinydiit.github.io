@@ -131,12 +131,38 @@
     }
   });
 
+  /** Background image slider */
+
+  let images = [  'slider-image-1',  'slider-image-2',  'slider-image-3',  'slider-image-4',  'slider-image-5'];
+
+let index = 0;
+let interval = 5000; // Change this value to set the time between image changes (in milliseconds)
+
+function changeImage() {
+  let left = document.querySelector('.left');
+  left.classList.remove(images[index % images.length]);
+  index++;
+  left.classList.add(images[index % images.length]);
+}
+
+setInterval(changeImage, interval);
+
+
   /**
    * Initiate glightbox 
    */
   const glightbox = GLightbox({
     selector: '.glightbox'
   });
+
+  /**subscription alert */
+  function subscribe(event) {
+    event.preventDefault();
+    const email = document.querySelector('input[name="email"]').value;
+    // code to send an email to "dengjokdeng@gmail.com"
+    document.getElementById("subscribe-message").innerHTML = "Thank You For Subscribing!";
+    alert("Thank You For Subscribing!");
+  }
 
   /**
    * Back to top button
@@ -155,3 +181,5 @@
    }
 
 })()
+
+/**subscription form */
