@@ -192,7 +192,7 @@ h1, h2, h3, h4, h5, h6 {
 .learn-more-btn:hover {
   border: 2px #fcec6d solid;
   background: transparent;
-  color: #1977cc;
+  color: white;
 }
 
 /**donate Button**/
@@ -215,7 +215,7 @@ h1, h2, h3, h4, h5, h6 {
 .donate-btn:hover {
   border: 2px white solid;
   background: transparent;
-  color: #298ce5;
+  color: white;
 }
 /* Responsive Styles */
 @media (max-width: 768px) {
