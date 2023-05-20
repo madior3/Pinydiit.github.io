@@ -182,4 +182,4 @@ setInterval(changeImage, interval);
 
 })()
 
-/**subscription form */
+/**popup */
