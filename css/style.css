@@ -26,6 +26,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+    .logo {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+
+    .logo img {
+      max-height: 40px;
+      border-radius: 100%;
+    }
+
+    .title {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 24px;
+    }
 
 
 /*--------------------------------------------------------------
@@ -113,10 +129,8 @@ h1, h2, h3, h4, h5, h6 {
   height: 3px;
   background-color: black;
   z-index: 9999;
-  transition: width 0.3s ease;
+  transition: width 0.1s ease;
 }
-
-
 
 
 
