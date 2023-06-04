@@ -50,12 +50,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #topbar .Where-We-Are-info a:hover {
-  color: #fcec6d;
+  color: #1977cc;
 }
 
 #topbar .Where-We-Are-info i {
-  color: #fcec6d;
-  padding-right: 4px;
+  color: #1977cc;
+  padding-right: 6px;
   margin-left: 15px;
   line-height: 0;
 }
@@ -104,6 +104,22 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+/**Progress bar*/
+#progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: black;
+  z-index: 9999;
+  transition: width 0.3s ease;
+}
+
+
+
+
+
 
 /*--------------------------------------------------------------
 # Header
@@ -122,20 +138,23 @@ h1, h2, h3, h4, h5, h6 {
 
 #header.header-scrolled {
   position: fixed;
-  padding-top: 16px;
+  padding-top: 30px;
   top: 0;
   height: 121px;
+  border-top: 2px solid white;
   background-color: #1977cc;
+  transform-style: flat;
 }
+
 
 #header .logo img {
   margin: 0;
-  padding: 0;
+  padding: 2px;
   position: sticky;
   top: 0;
-  max-height: 70px;
-  border-radius: 50%;
-  transform: scale(1.7); 
+  max-height: 80px;
+  border-radius: 100%;
+  transform: scale(1.8); 
   transform-origin: center;
 
   
@@ -266,6 +285,7 @@ h1, h2, h3, h4, h5, h6 {
   white-space: nowrap;
   padding: 8px 0 8px 20px;
 }
+
 
 .navbar a, .navbar a:focus {
   display: flex;
@@ -575,7 +595,7 @@ section {
   margin-bottom: 15px;
 }
 .cutoff-text{
-  --max-lines: 5;
+  --max-lines: 3;
   --line-height: 1.4;
 
   max-height: calc(var(--max-lines) *1em * var(--line-height));
