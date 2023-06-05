@@ -55,6 +55,16 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 996;
 }
 
+#topbar .slash{
+  padding-left: 6px;
+  position: relative;
+  font-size: large;
+  font-weight: 400;
+  line-height: 4px;
+  text-align: center;
+  align-items: center;
+
+}
 #topbar.topbar-scrolled {
   top: -40px;
 }
