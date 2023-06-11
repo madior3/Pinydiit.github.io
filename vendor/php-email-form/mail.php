@@ -4,17 +4,19 @@ $name = $_POST['name'];
 $email = $_POST['email'];
 $subject = $_POST['subject'];
 $message = $_POST['message'];
-$to = "dengjokdeng@gmail.com";
-$subject = "From Pinydiit Foundation";
 
-$header = "From: ".$name. "\r\n" .
+$mailheader = "From: ".$name. "<".$email.">\r\n"
 "CC: penydiit@pinydiitfoundation.org";
 
 
-$txt = "You have a new e-mail from ".$name ."\r\nEmail: " .$email ."\r\n
-Message: ". $message;
+$recipient = "dengjokdeng@gmail.com";
 
-if(email!=NULL){
-    mail($to, $subject, $txt, $header );
-}
+mail($recipient, $subject, $message, $mailheader)
 
+or die("Error!");
+
+echo"Message Send Successfully";
+
+
+
+?>
