@@ -136,7 +136,7 @@
   let images = [  'slider-image-1',  'slider-image-2',  'slider-image-3',  'slider-image-4',  'slider-image-5'];
 
 let index = 0;
-let interval = 5000; // Change this value to set the time between image changes (in milliseconds)
+let interval = 6000; // Change this value to set the time between image changes (in milliseconds)
 
 function changeImage() {
   let left = document.querySelector('.left');

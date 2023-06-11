@@ -546,6 +546,7 @@ section {
   width: 55%;
   min-height: 321px;
   background-color: black;
+  
   display: flex;
   align-content: center;
   justify-content: center;
