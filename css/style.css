@@ -764,10 +764,11 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  color: #1977cc;
+  color: #2c4964;
   padding: 4em;
   box-sizing: border-box;
   width: 30%;
+  font-size: larger;
 }
 
 img {
@@ -811,7 +812,6 @@ img {
 #slide2 { background-color: white; }
 #slide3 { background-color: #FF5B0D; }
 #slide4 { background-color: white; };
-
 
 
 /* Tablet */
